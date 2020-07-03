@@ -30,14 +30,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _updateBackgroundColor() {
     setState(() {
-      _backgroundColor = RandomColor();
+      _backgroundColor = RandomColor.randomFromARGB();
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: _backgroundColor ?? RandomColor(),
+        backgroundColor: _backgroundColor ?? RandomColor.randomFromARGB(),
         appBar: AppBar(
           title: Text("Color Randomizer"),
         ),

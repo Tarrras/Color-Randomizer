@@ -12,5 +12,5 @@ import 'package:flutter/material.dart';
 int _generateNumberForColor() => Random().nextInt(257);
 
 class RandomColor extends Color {
-  RandomColor() : super.fromARGB(_generateNumberForColor(),_generateNumberForColor(),_generateNumberForColor(),_generateNumberForColor());
+  RandomColor.randomFromARGB() : super.fromARGB(_generateNumberForColor(),_generateNumberForColor(),_generateNumberForColor(),_generateNumberForColor());
 }
