@@ -49,12 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 100,
                     height: 50,
                     decoration: BoxDecoration(
+                        color: Colors.black,
                         border: Border.all(width: 1, color: Colors.white),
                         borderRadius: BorderRadius.all(Radius.circular(5))),
                     child: Center(
                       child: Text(
                         "Hey there",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
                     ))),
           ),
